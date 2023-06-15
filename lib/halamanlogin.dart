@@ -1,6 +1,20 @@
 import 'package:flutter/material.dart';
 import 'package:zaza/halamanutama.dart';
 
+class ImageSliderDemo extends StatefulWidget {
+  const ImageSliderDemo({super.key});
+
+  @override
+  State<ImageSliderDemo> createState() => _ImageSliderDemoState();
+}
+
+class _ImageSliderDemoState extends State<ImageSliderDemo> {
+  @override
+  Widget build(BuildContext context) {
+    return const Placeholder();
+  }
+}
+
 class DesainHalamanLogin extends StatefulWidget {
   const DesainHalamanLogin({super.key});
 
@@ -76,7 +90,7 @@ class _DesainHalamanLoginState extends State<DesainHalamanLogin> {
                       ElevatedButton(
                           onPressed: () {
                             String tUser = "admin";
-                            String tPass = "12345";
+                            String tPass = "admin";
                             if (fromKey.currentState!.validate()) {
                               if (cUser.text == tUser && cPass.text == tPass) {
                                 Navigator.pushAndRemoveUntil(
@@ -101,7 +115,7 @@ class _DesainHalamanLoginState extends State<DesainHalamanLogin> {
                                                 cPass.text = "";
                                                 Navigator.of(context).pop();
                                               },
-                                              child: Text("Ok"))
+                                              child: Text("OK"))
                                         ],
                                       );
                                     });
