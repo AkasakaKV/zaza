@@ -7,7 +7,7 @@ class ecare extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("E-Care"),
+        title: const Text("Customer Service"),
         backgroundColor: Color.fromARGB(255, 250, 27, 27),
       ),
       backgroundColor: Color.fromARGB(255, 255, 255, 255),
@@ -15,7 +15,7 @@ class ecare extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: const <Widget>[
-            Text("ini adalah E-Care "),
+            Text("ini adalah CostumerService "),
           ],
         ),
       ),

@@ -1,20 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:zaza/halamanutama.dart';
 
-class ImageSliderDemo extends StatefulWidget {
-  const ImageSliderDemo({super.key});
-
-  @override
-  State<ImageSliderDemo> createState() => _ImageSliderDemoState();
-}
-
-class _ImageSliderDemoState extends State<ImageSliderDemo> {
-  @override
-  Widget build(BuildContext context) {
-    return const Placeholder();
-  }
-}
-
 class DesainHalamanLogin extends StatefulWidget {
   const DesainHalamanLogin({super.key});
 
@@ -93,13 +79,13 @@ class _DesainHalamanLoginState extends State<DesainHalamanLogin> {
                             String tPass = "admin";
                             if (fromKey.currentState!.validate()) {
                               if (cUser.text == tUser && cPass.text == tPass) {
-                                Navigator.pushAndRemoveUntil(
-                                    context,
-                                    MaterialPageRoute(
-                                      builder: (context) =>
-                                          const DesainHalamanUtama(),
-                                    ),
-                                    (route) => false);
+                                Navigator.pushReplacement(
+                                  context,
+                                  MaterialPageRoute(
+                                    builder: (context) =>
+                                        const DesainHalamanUtama(),
+                                  ),
+                                );
                               } else {
                                 showDialog(
                                     context: context,
