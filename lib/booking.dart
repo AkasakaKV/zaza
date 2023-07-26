@@ -16,13 +16,20 @@ class booking extends StatelessWidget {
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
-          children: const <Widget>[
-            Text("ini adalah Service "),
-          ],
+          children: const <Widget>[],
         ),
       ),
     );
   }
+}
+
+class MyHomePage extends StatefulWidget {
+  const MyHomePage({super.key, required this.title});
+
+  final String title;
+
+  @override
+  State<MyHomePage> createState() => _booking();
 }
 
 class _booking extends State<MyHomePage> {
