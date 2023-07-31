@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
       title: 'Service Booking',
       theme: ThemeData(
         colorScheme:
-            ColorScheme.fromSeed(seedColor: Color.fromARGB(255, 250, 27, 27)),
+            ColorScheme.fromSeed(seedColor: Color.fromARGB(255, 228, 24, 24)),
         useMaterial3: true,
       ),
       home: const MyHomePage(title: 'Service Booking'),
